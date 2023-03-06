@@ -1,0 +1,21 @@
+* {
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+    font-size: 75px;
+    height: 15px;
+    width: 5px;
+    color: rgba(172, 255, 47, 0.753);
+}
+
+ div {
+    color: purple;
+    height: 50px;
+    width: 50px;
+   background-color: aqua;
+   border:rgba(172, 255, 47, 0.753)
+}
+
+
