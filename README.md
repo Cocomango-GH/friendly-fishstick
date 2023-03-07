@@ -12,9 +12,10 @@ the player will have three chances to find the right match or will restart the g
 //When player choose the correct card the cards will remained faced up//
 //when player guesses correct pair add 10 points to the score.//
 // we need to keep track of player  score// 
-//
-
-
+// when the player guesses the same card image they need to be matches and stay faced up// 
+player guesses the wrong card score will 2 pts will be taken from the score//
+// after player finds all matched card player score will be read and player wins//
+This game will dimonstrate what i have learned so far i will be using JS functions, varibles , loop, eventlisteniers, and mathods. 
 /*----- constants -----*/
 //const audio = new Audio();//
 //memorycards//
