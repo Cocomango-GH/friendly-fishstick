@@ -1,7 +1,7 @@
 
 * {
-    padding: 0px;
-    margin: 0px;
+    padding: 0;
+    margin: 0;
     box-sizing: border-box;
   }
 
@@ -18,11 +18,10 @@ body {
         justify-content: center;
         margin: auto;
         color: #1C7CCC;
-        padding: 30px;
-
+        padding: 38px;
   }
 
-  .board {
+  .card-board {
     width: 500px;
     height: 500px;
     margin: auto;
@@ -31,10 +30,10 @@ body {
     color: rgb(75, 135, 246);
   }
 
-  .memory-card {
+  .cards {
     width: 100px;
     height: 100px;
-    margin: 20px;
+    margin: 5px;
     position: relative;
     color: aqua;
   }
@@ -44,6 +43,6 @@ body {
     height: 100%;
     padding: 20px;
     position: absolute;
-    border-radius: 20px;
+    border-radius: 5px;
     background: #1C7CCC;
   }

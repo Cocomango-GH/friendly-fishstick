@@ -1,7 +1,55 @@
 # friendly-fishstick
-Welcome to the game of Friendly-FishSticks can you help the fishstick find their firends.
-find the matching fishsticks. 
+Welcome !!! to the game of Friendly-FishSticks can you help the fish find their firends.
+find the matching fish. 
 
-Rules of the game 
-Player will have 15 seconds to look over cards before they turn over. 
-the player will have three chances to find the right match or the player loses the game. How many fish sticks will you find. 
+*Rules of the game* 
+the player will have three chances to find the right match or will restart the game. How many fish will you find ?
+
+//This is a short game of concentration that will include 12 cards matched by pairs.//
+// the title will be centered in the middle of the page at the top pushed away from border.//
+// the  will be centered at the top of the page // 
+//If player does not  choose correct pair game will end after three incorrect tries.// 
+//When player choose the correct card the cards will remained faced up//
+//when player guesses correct pair add 10 points to the score.//
+// we need to keep track of player  score// 
+//
+
+
+/*----- constants -----*/
+//const audio = new Audio();//
+//memorycards//
+
+
+/*----- app's state (variables) -----*/
+
+//guesses 
+//score
+// flip over
+// cards
+// hold the board 
+//* moves 
+
+
+/*----- cached element references -----*/
+
+// flip over
+// cards
+// hold the board 
+
+
+/*----- event listeners -----*/
+// A event listener that listen for clicks for the start button and cards//
+
+/*----- functions -----*/
+//init ();
+// 
+
+//when game starts show board for 15 seconds then filip over///
+// show wrong guess for 2 seconds flip back over//
+// when guess correctly leave card flipped over//
+/// after three wrong guess end game //
+
+//shuffle deck after game player loses and restart game//
+
+///matching//
+//shuffling//

@@ -1,35 +1,29 @@
-
+console.log('im working')
 /*----- constants -----*/
-//memorycards
+//const audio = new Audio();//
+//memorycards//
+const memoryCards = document.querySelectorAll('.cards')
+console.log(memoryCards)
+/*----- app's state (variables) -----*/ 
 
-const memorycards = {
-
-}
-
-/*----- app's state (variables) -----*/
-// flip over
-// cards
-// hold the board 
+let card = document.querySelectorAll('.cards')
 
 
 
 /*----- cached element references -----*/
 
-// flip over
-// cards
-// hold the board 
-
 
 /*----- event listeners -----*/
 // A event listener that listen for clicks for the start button and cards//
-
-
-
+memoryCards.forEach(card => {
+ card.addEventListener('click', clickedCards)
+})
+console.log('i been clicked')
 /*----- functions -----*/
-//when game starts show board for 15 seconds then filip over///
-// show wrong guess for 2 seconds flip back over//
-// when guess correctly leave card flipped over//
-/// after three wrong guess end game //
-
-//shuffle deck after game player loses and restart game//
+//cards now have eventlistener when clicked//
+function clickedCards(evt) {
+    const memCard = evt.target
+    console.log('.cards')
+}
+/// cards need to have afcuntion for matching cards when clicked//
 
