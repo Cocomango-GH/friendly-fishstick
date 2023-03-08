@@ -10,7 +10,8 @@ const myCards = [
 /*----- app's state (variables) -----*/ 
 let matches = 0;
 let flipped = [];
-let card
+let winner = null;
+let score = 0;
 /*----- cached elements  -----*/
 const memoryCards = document.querySelectorAll('.cards')
 
@@ -21,6 +22,8 @@ memoryCards.forEach(card => {
 
 /*----- functions -----*/
 
+
+
 function clickedCards(evt) {
     const memCard = evt.target;
     // memCard.classList.add('flipped');
@@ -30,14 +33,27 @@ function clickedCards(evt) {
 }
 
 function matchCards() {
-// i need two cards
-   if(flipped.length === 2) {
-    if(flipped[0].classList[1] === flipped[1].classList[1]){
-console.log('matched')
-    } else (flipped[0].classList[2] != flipped[0].classList[1])
-    console.log('unmatched')
+    if(flipped.length === 2) {
+      if(flipped[0].classList[1] === flipped[1].classList[1]) {
+        matches++;
+        score += 10;//increase score with everymatch
+        console.log('score')
+        flipped = [];
+      }else {
+        console.log('unmatched')
+        flipped[0].classList.remove('flipped');
+        flipped[1].classList.remove('flipped');
+        score -= 2;
+        flipped = [];
+      }
+    }
+    if(matches === myCards.length / 2) {
+        winner = 'player';
+     console.log('you won');
+     console.log('your score is:' + score);
 
 }}
+
 // function clickedCards(evt) {
 //   const memCard = evt.target;
 
