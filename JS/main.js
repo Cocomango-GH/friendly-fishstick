@@ -5,6 +5,15 @@ const myCards = [
   {id: 1, value: 'card1'},
   {id: 2, value: 'card2'},
   {id: 2, value: 'card2'},
+  {id: 2, value: 'card2'},
+  {id: 2, value: 'card2'},
+  {id: 2, value: 'card2'},
+  {id: 2, value: 'card2'},
+  {id: 2, value: 'card2'},
+  {id: 2, value: 'card2'},
+  {id: 2, value: 'card2'},
+  {id: 2, value: 'card2'},
+
 ]
 
 /*----- app's state (variables) -----*/ 
@@ -21,7 +30,21 @@ memoryCards.forEach(card => {
 });
 
 /*----- functions -----*/
+init();
 
+function init() {
+    score = 0;
+    flipped = [];
+    winner =  null;
+    matches = 0;
+    render();
+  }
+ 
+function render() {
+    document.querySelector('#score').innerHTML = `Score ${score}`;
+    document.querySelector('#matches').innerHTML = `Matches ${matches}`;
+    document.querySelector('#winner').innerHTML = `Winner: ${winner || '_'}`;
+}
 
 
 function clickedCards(evt) {
@@ -30,6 +53,7 @@ function clickedCards(evt) {
     flipped.push(memCard)
     matchCards();
     console.log('iclicked you')
+    render();
 }
 
 function matchCards() {

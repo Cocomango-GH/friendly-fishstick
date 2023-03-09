@@ -54,3 +54,8 @@ This game will dimonstrate what i have learned so far i will be using JS functio
 
 ///matching//
 //shuffling//
+
+
+*Future Plans for Frinedly Fish-sticks*
+
+In the future I would like to add a second player also I would like to add number of moves feature, the flip method to my game more cards to match as well would make my game complete or to my standards.  
