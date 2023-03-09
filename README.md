@@ -1,5 +1,7 @@
 # friendly-fishstick
-Welcome !!! to the game of Friendly-FishSticks can you help the fish find their firends.
+Welcome !!! to the game of Friendly-FishSticks can you help the fish 
+
+find their firends.
 find the matching fish. 
 
 *Rules of the game* 

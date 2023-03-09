@@ -2,17 +2,17 @@
 
 const myCards = [
   {id: 1, value: 'card1'},
-  {id: 1, value: 'card1'},
-  {id: 2, value: 'card2'},
-  {id: 2, value: 'card2'},
-  {id: 2, value: 'card2'},
-  {id: 2, value: 'card2'},
-  {id: 2, value: 'card2'},
-  {id: 2, value: 'card2'},
-  {id: 2, value: 'card2'},
-  {id: 2, value: 'card2'},
-  {id: 2, value: 'card2'},
-  {id: 2, value: 'card2'},
+  {id: 2, value: 'card1'},
+  {id: 3, value: 'card2'},
+  {id: 4, value: 'card2'},
+  {id: 5, value: 'card3'},
+  {id: 6, value: 'card3'},
+  {id: 7, value: 'card4'},
+  {id: 8, value: 'card4'},
+  {id: 9, value: 'card5'},
+  {id: 10, value: 'card5'},
+  {id: 11, value: 'card6'},
+  {id: 12, value: 'card6'},
 
 ]
 
@@ -49,10 +49,9 @@ function render() {
 
 function clickedCards(evt) {
     const memCard = evt.target;
-    // memCard.classList.add('flipped');
+    memCard.classList.add('flipped');
     flipped.push(memCard)
     matchCards();
-    console.log('iclicked you')
     render();
 }
 
@@ -61,10 +60,8 @@ function matchCards() {
       if(flipped[0].classList[1] === flipped[1].classList[1]) {
         matches++;
         score += 10;//increase score with everymatch
-        console.log('score')
         flipped = [];
       }else {
-        console.log('unmatched')
         flipped[0].classList.remove('flipped');
         flipped[1].classList.remove('flipped');
         score -= 2;
@@ -76,40 +73,8 @@ function matchCards() {
      console.log('you won');
      console.log('your score is:' + score);
 
-}}
+    }
+}
 
-// function clickedCards(evt) {
-//   const memCard = evt.target;
-
-//   if (flipped.includes(memCard)) {
-//     return;
-//   }
- 
-//   flipped.push(memCard);
-//   memCard.classList.add('flipped');
-
-//   if (flipped.length === 2) {
-//     checkForMatch();
-//   }
-// }
-
-// function checkForMatch() {
-//   const firstCard = flipped[0];
-//   const secondCard = flipped[1];
-
-//   if (firstCard.dataset.id === secondCard.dataset.id) {
-//     firstCard.classList.add('matched');
-//     secondCard.classList.add('matched');
-//     matches++;
-
-//     if (matches === myCards.length / 2) {
-//       // All cards have been matched
-//       console.log('You win!');
-//    } else {
-//      setTimeout(() => {
-//         firstCard.classList.remove('flipped');
-//      secondCard.classList.remove('flipped');
-//     }, 1000);
-//    }
-
-//      flipped = []; 
+/// match cards and flipp i would like to add in the future ////
+///countdown timer/

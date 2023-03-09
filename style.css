@@ -1,6 +1,6 @@
 
 * {
-    padding: 0px;
+    padding: 0;
     margin: 0;
     box-sizing: border-box;
   }
@@ -20,20 +20,20 @@ body {
     justify-content: center;
     margin: auto;
     color: #1C7CCC;
-    padding: 38px;
+    padding: 2.375em;
   }
 .card-board {
-    width: 500px;
-    height: 500px;
+    width: 31.25em;
+    height: 31.25em;
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     color: rgb(75, 135, 246);
   }
 .cards {
-    width: 100px;
-    height: 100px;
-    margin: 5px;
+    width: 6.25em;
+    height: 6.25em;
+    margin: 0.313em;
     position: relative;
     color: aqua;
     transform: scale(1);
@@ -45,14 +45,14 @@ body {
 .front, .back {
     width: 100%;
     height: 100%;
-    padding: 20px;
+    padding: 1.25em;
     position: absolute;
-    border-radius: 5px;
+    border-radius: 0.313em;
     background: #1C7CCC;
   }
 
 section, div {
-    font-size: 20px;
+    font-size: 1.25em;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     display: flex;
@@ -66,5 +66,22 @@ section, div {
       flex-wrap: wrap;
       width: fit-content;
   }
-
-  
+ 
+  @media  (max-width: 500px){
+    body { height: 100vh;
+      display: inline;
+      flex-direction: column;
+      flex-wrap: wrap;
+      background: orange;
+       
+    }
+  }
+  @media  (min-width: 200px){
+    body { height: 100vh;
+      display: inline;
+      flex-direction: column;
+      flex-wrap: wrap;
+      background: orange;
+       
+    }
+  }
