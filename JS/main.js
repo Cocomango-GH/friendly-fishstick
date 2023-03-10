@@ -61,8 +61,8 @@ function matchCards() {
     if(flipped.length === 2) {
       if(flipped[0].classList[1] === flipped[1].classList[1]) {
         matches++;
-        score += 10;//increase score with everymatch//
-        flipped = [];//reset the flipped array//
+        score += 10;
+        flipped = [];
       }else {
         flipped[0].classList.remove('flipped');
         flipped[1].classList.remove('flipped');
@@ -79,5 +79,3 @@ function matchCards() {
     }
 }
 
-/// match cards and flipp i would like to add in the future ////
-///countdown timer/
