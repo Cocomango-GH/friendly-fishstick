@@ -67,21 +67,33 @@ section, div {
       width: fit-content;
   }
  
-  @media  (max-width: 500px){
+  @media only screen and (min-width: 1024px) {
     body { height: 100vh;
       display: inline;
+     flex-direction: column;
+     flex-wrap: wrap;
+     background: orange;
+      
+   }
+  }
+  @media only screen and (device-width: 375px) and (device-height: 812px) and (-webkit-device-pixel-ratio: 3) {
+    body { height: 100vh;
+       display: inline;
       flex-direction: column;
       flex-wrap: wrap;
       background: orange;
        
     }
   }
-  @media  (min-width: 200px){
+  @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
     body { height: 100vh;
       display: inline;
-      flex-direction: column;
-      flex-wrap: wrap;
-      background: orange;
-       
-    }
+     flex-direction: column;
+     flex-wrap: wrap;
+     background: orange;
+      
+   }
   }
+
+
+

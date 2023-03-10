@@ -21,6 +21,7 @@ let matches = 0;
 let flipped = [];
 let winner = null;
 let score = 0;
+let numGuesses = 0;
 /*----- cached elements  -----*/
 const memoryCards = document.querySelectorAll('.cards')
 
@@ -52,6 +53,7 @@ function clickedCards(evt) {
     memCard.classList.add('flipped');
     flipped.push(memCard)
     matchCards();
+    console.log('iclicked you')
     render();
 }
 
@@ -59,20 +61,21 @@ function matchCards() {
     if(flipped.length === 2) {
       if(flipped[0].classList[1] === flipped[1].classList[1]) {
         matches++;
-        score += 10;//increase score with everymatch
-        flipped = [];
+        score += 10;//increase score with everymatch//
+        flipped = [];//reset the flipped array//
       }else {
         flipped[0].classList.remove('flipped');
         flipped[1].classList.remove('flipped');
         score -= 2;
         flipped = [];
+        numGuesses++;
+        if(numGuesses === 3) {
+            winner = 'gameover'
+        }
       }
     }
     if(matches === myCards.length / 2) {
         winner = 'player';
-     console.log('you won');
-     console.log('your score is:' + score);
-
     }
 }
 
