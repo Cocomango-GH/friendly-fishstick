@@ -1,62 +1,37 @@
-# friendly-fishstick
-Welcome !!! to the game of Friendly-FishSticks can you help the fish 
-find their firends.
-find the matching fish. 
+# Friendly-Fishsticks 
+:tropical_fish: **Welcome to the game of Friendly-FishSticks a concentration game can you help the friend find their twin?** :tropical_fish:
 
-*Rules of the game* 
-the player will have three chances to find the right match or will restart the game. How many fish will you find ?
+###*Rules of the game* 
+**Player must find 6 matches to win the game for every correct match player gets 10 points. If player gets incorrect matches 2 points will be subtracted from score three incorrect macthes the game will be over.**
 
-//This is a short game of concentration that will include 12 cards matched by pairs.//
-// the title will be centered in the middle of the page at the top pushed away from border.//
-// the  will be centered at the top of the page // 
-//If player does not  choose correct pair game will end after three incorrect tries.// 
-//When player choose the correct card the cards will remained faced up//
-//when player guesses correct pair add 10 points to the score.//
-// we need to keep track of player  score// 
-// when the player guesses the same card image they need to be matches and stay faced up// 
-player guesses the wrong card score will 2 pts will be taken from the score//
-// after player finds all matched card player score will be read and player wins//
-This game will dimonstrate what i have learned so far i will be using JS functions, varibles , loop, eventlisteniers, and mathods. 
-/*----- constants -----*/
-//const audio = new Audio();//
-//memorycards//
+#####**technologies used
+![](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white) ![](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white) ![](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black) ![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)
+
+![Game img]()
 
 
-/*----- app's state (variables) -----*/
-
-//guesses 
-//score
-// flip over
-// cards
-// hold the board 
-//* moves 
 
 
-/*----- cached element references -----*/
-
-// flip over
-// cards
-// hold the board 
+###[Demo Link](https://cocomango-gh.github.io/friendly-fishstick/)
 
 
-/*----- event listeners -----*/
-// A event listener that listen for clicks for the start button and cards//
-
-/*----- functions -----*/
-//init ();
-// 
-
-//when game starts show board for 15 seconds then filip over///
-// show wrong guess for 2 seconds flip back over//
-// when guess correctly leave card flipped over//
-/// after three wrong guess end game //
-
-//shuffle deck after game player loses and restart game//
-
-///matching//
-//shuffling//
 
 
-*Future Plans for Frinedly Fish-sticks*
 
-In the future I would like to add a second player also I would like to add number of moves feature, the flip method to my game more cards to match as well would make my game complete or to my standards.  
+####Future Plans for Frinedly Fish-sticks
+- add reset button
+- flip cards feature 
+- countdown 
+- moves made feature 
+- make the game more interactive for users 
+- add play button 
+
+####code that chanllenge me
+```js
+// this line removes flipped from the second element in the array the second line subtracts two from the score and the three line turns the flipped array back to empty so we can pick of the cards for  matches.
+//this was my biggest challenge and getting the matching to work. 
+ flipped[0].classList.remove('flipped');
+        flipped[1].classList.remove('flipped');
+        score -= 2;
+        flipped = [];
+```
