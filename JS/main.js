@@ -16,21 +16,21 @@ const myCards = [
 
 ]
 
-/*----- app's state (variables) -----*/ 
+
 let matches = 0;
 let flipped = [];
 let winner = null;
 let score = 0;
 let numGuesses = 0;
-/*----- cached elements  -----*/
+
 const memoryCards = document.querySelectorAll('.cards')
 
-/*----- event listeners -----*/
+
 memoryCards.forEach(card => {
   card.addEventListener('click', clickedCards)
 });
 
-/*----- functions -----*/
+
 init();
 
 function init() {
